@@ -2,4 +2,6 @@
     <string name="app_name">Ali Android Lab</string>
     <string name="hello_message">Hello World!!!</string>
     <string name="button_message">I am button</string>
+    <string name="hinttext">Enter text here</string>
+    <string name="editmessage">Default edit text value</string>
 </resources>

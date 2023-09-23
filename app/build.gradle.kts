@@ -5,7 +5,9 @@ plugins {
 android {
     namespace = "algon.cst2335.ALi"
     compileSdk = 33
-
+    buildFeatures {
+        viewBinding = true
+    }
     defaultConfig {
         applicationId = "algon.cst2335.ALi"
         minSdk = 22

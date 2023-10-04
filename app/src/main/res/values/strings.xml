@@ -2,4 +2,8 @@
     <string name="app_name">Ali Android Lab</string>
     <string name="hello_message">Hello World!!!</string>
     <string name="button_message">I am button</string>
+    <string name="Spin_message">Spin flag</string>
+    <string name="button4">button 1</string>
+    <string name="button2">button 2</string>
+    <string name="button3">button 3</string>
 </resources>

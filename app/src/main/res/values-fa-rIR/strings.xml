@@ -3,4 +3,8 @@
     <string name="app_name">Ali Android Lab</string>
     <string name="hello_message">سلام دنیا!!!</string>
     <string name="button_message">من دکمه هستم</string>
+    <string name="Spin_message">چرخش پرچم</string>
+    <string name="button4">دکمه 1</string>
+    <string name="button2">دکمه 1</string>
+    <string name="button3">دکمه  3</string>
 </resources>

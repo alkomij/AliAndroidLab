@@ -6,12 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="git commit -am &quot;Finished step 2&quot;" />
-
     <Button
         android:id="@+id/button4"
         android:layout_width="wrap_content"

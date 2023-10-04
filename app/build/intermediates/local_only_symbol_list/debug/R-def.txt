@@ -1,0 +1,29 @@
+R_DEF: Internal format may change without notice
+local
+color black
+color my_primary
+color my_secondary
+color my_statusbar
+color my_text
+color white
+drawable flag
+drawable ic_launcher_background
+drawable icon
+id button2
+id button3
+id button4
+id flagView
+id switch1
+id textView
+layout activity_main
+string app_name
+string button1
+string button2
+string button3
+string button_message
+string hello_message
+string spin_message
+style Base.Theme.AliAndroidLab
+style Theme.AliAndroidLab
+xml backup_rules
+xml data_extraction_rules

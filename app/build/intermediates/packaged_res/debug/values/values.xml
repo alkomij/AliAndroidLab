@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="my_primary">#F81414</color>
+    <color name="my_secondary">#11A6EA</color>
+    <color name="my_statusbar">#0FF319</color>
+    <color name="my_text">#0EAAF1</color>
+    <color name="white">#FFFFFFFF</color>
+    <string name="app_name">Ali Android Lab</string>
+    <string name="button1">Button 1</string>
+    <string name="button2">Button 2</string>
+    <string name="button3">Button 3</string>
+    <string name="button_message">I am button</string>
+    <string name="hello_message">Hello World!!!</string>
+    <string name="spin_message">Spin flag</string>
+    <style name="Base.Theme.AliAndroidLab" parent="Theme.Material3.DayNight.NoActionBar">
+   
+    <item name="colorPrimary">@color/my_primary</item>
+    
+
+    <item name="colorSecondary">@color/my_secondary</item>
+     
+
+      <item name="android:statusBarColor">@color/my_statusbar</item>
+        <item name="android:textColor">@color/my_text</item>
+    </style>
+    <style name="Theme.AliAndroidLab" parent="Base.Theme.AliAndroidLab"/>
+</resources>

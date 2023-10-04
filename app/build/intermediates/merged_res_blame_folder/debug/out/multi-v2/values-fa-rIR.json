@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-mergeDebugResources-26:\\values-fa-rIR\\values-fa-rIR.xml",
+            "outputFile": "algon.cst2335.ALi.app-mergeDebugResources-26:/values-fa-rIR/values-fa-rIR.xml",
             "map": [
                 {
                     "source": "C:\\Users\\komijani\\AliAndroidLab\\app\\src\\main\\res\\values-fa-rIR\\strings.xml",
@@ -11,26 +11,6 @@
                         "startOffsets": "57,276,320,364,167,111,224",
                         "endColumns": "52,42,42,42,55,54,50",
                         "endOffsets": "105,314,358,402,218,161,270"
-                    },
-                    "to": {
-                        "startLines": "2,3,4,5,6,7,8",
-                        "startColumns": "4,4,4,4,4,4,4",
-                        "startOffsets": "55,108,151,194,237,293,348",
-                        "endColumns": "52,42,42,42,55,54,50",
-                        "endOffsets": "103,146,189,232,288,343,394"
-                    }
-                }
-            ]
-        },
-        {
-            "outputFile": "algon.cst2335.ALi.app-mergeDebugResources-26:/values-fa-rIR/values-fa-rIR.xml",
-            "map": [
-                {
-                    "source": "C:\\Users\\komijani\\AliAndroidLab\\app\\src\\main\\res\\values-fa-rIR\\strings.xml",
-                    "from": {
-                        "startLines": "-1,-1,-1,-1,-1,-1,-1",
-                        "startColumns": "-1,-1,-1,-1,-1,-1,-1",
-                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1"
                     },
                     "to": {
                         "startLines": "8,9,10,11,12,13,14",
@@ -45,9 +25,9 @@
                     "from": {
                         "startLines": "5,2,3,4,7,6",
                         "startColumns": "4,4,4,4,4,4",
-                        "startOffsets": "194,55,100,147,274,234",
+                        "startOffsets": "199,57,103,151,281,240",
                         "endColumns": "39,44,46,46,41,39",
-                        "endOffsets": "229,95,142,189,311,269"
+                        "endOffsets": "234,97,145,193,318,275"
                     },
                     "to": {
                         "startLines": "2,3,4,5,6,7",

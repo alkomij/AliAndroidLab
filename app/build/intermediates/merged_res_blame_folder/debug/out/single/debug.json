@@ -1,34 +1,34 @@
 [
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\drawable_icon.png.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\drawable\\icon.png"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/xml_backup_rules.xml.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/xml/backup_rules.xml"
     },
     {
         "merged": "algon.cst2335.ALi.app-merged_res-28:/drawable_ali.png.flat",
         "source": "algon.cst2335.ALi.app-main-30:/drawable/ali.png"
     },
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\layout_activity_main.xml.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\layout\\activity_main.xml"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/xml_data_extraction_rules.xml.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\xml_backup_rules.xml.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\xml\\backup_rules.xml"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/drawable-FA-rIR_flag.png.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/drawable-FA-rIR/flag.png"
     },
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\drawable_ic_launcher_background.xml.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\drawable\\ic_launcher_background.xml"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/drawable_icon.png.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/drawable/icon.png"
     },
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\drawable_flag.png.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\drawable\\flag.png"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/drawable_flag.png.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/drawable/flag.png"
     },
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\drawable-FA-rIR_flag.png.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\drawable-FA-rIR\\flag.png"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/drawable_ic_launcher_background.xml.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\xml_data_extraction_rules.xml.flat",
-        "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\xml\\data_extraction_rules.xml"
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/layout_activity_main.xml.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/layout/activity_main.xml"
     }
 ]

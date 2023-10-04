@@ -6,6 +6,7 @@ color my_secondary
 color my_statusbar
 color my_text
 color white
+drawable ali
 drawable flag
 drawable ic_launcher_background
 drawable icon

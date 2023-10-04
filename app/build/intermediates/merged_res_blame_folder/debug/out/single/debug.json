@@ -4,6 +4,10 @@
         "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\drawable\\icon.png"
     },
     {
+        "merged": "algon.cst2335.ALi.app-merged_res-28:/drawable_ali.png.flat",
+        "source": "algon.cst2335.ALi.app-main-30:/drawable/ali.png"
+    },
+    {
         "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\layout_activity_main.xml.flat",
         "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\layout\\activity_main.xml"
     },
@@ -26,9 +30,5 @@
     {
         "merged": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-merged_res-28:\\xml_data_extraction_rules.xml.flat",
         "source": "C:\\Users\\komijani\\.gradle\\daemon\\8.0\\algon.cst2335.ALi.app-main-30:\\xml\\data_extraction_rules.xml"
-    },
-    {
-        "merged": "algon.cst2335.ALi.app-merged_res-28:/layout_activity_main.xml.flat",
-        "source": "algon.cst2335.ALi.app-main-30:/layout/activity_main.xml"
     }
 ]

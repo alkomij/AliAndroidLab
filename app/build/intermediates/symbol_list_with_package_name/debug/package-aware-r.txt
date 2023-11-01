@@ -3106,9 +3106,9 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id button
 id button2
 id button3
-id button4
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3182,8 +3182,10 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextPhone
 id edit_query
 id elastic
+id emailEditText
 id embed
 id end
 id endToStart
@@ -3203,7 +3205,6 @@ id fitStart
 id fitToContents
 id fitXY
 id fixed
-id flagView
 id flip
 id floating
 id forever
@@ -3230,6 +3231,7 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
@@ -3340,6 +3342,7 @@ id parent
 id parentPanel
 id parentRelative
 id parent_matrix
+id passwordEditText
 id password_toggle
 id path
 id pathRelative
@@ -3436,7 +3439,6 @@ id stretch
 id submenuarrow
 id submit_area
 id supportScrollUp
-id switch1
 id tabMode
 id tag_accessibility_actions
 id tag_accessibility_clickable_spans
@@ -3459,6 +3461,8 @@ id textSpacerNoTitle
 id textStart
 id textTop
 id textView
+id textView2
+id textView3
 id text_input_end_icon
 id text_input_error_icon
 id text_input_start_icon
@@ -3621,6 +3625,7 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_main
+layout activity_second
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog

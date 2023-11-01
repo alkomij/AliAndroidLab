@@ -8,12 +8,14 @@
         android:minSdkVersion="22"
         android:targetSdkVersion="33" />
 
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+
     <uses-feature
-        android:name="android.hardware.touchscreen"
-        android:required="false" />
-    <uses-feature
-        android:name="android.software.leanback"
+        android:name="android.hardware.camera"
         android:required="true" />
+    <uses-feature
+        android:name="android.hardware.telephony"
+        android:required="false" />
 
     <permission
         android:name="algon.cst2335.ALi.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -35,12 +37,14 @@
         android:testOnly="true"
         android:theme="@style/Theme.AliAndroidLab" >
         <activity
+            android:name="algon.cst2335.ALi.SecondActivity"
+            android:exported="false" />
+        <activity
             android:name="algon.cst2335.ALi.MainActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LEANBACK_LAUNCHER" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

@@ -2,11 +2,11 @@ package algon.cst2335.ALi;
 
 import static androidx.test.espresso.Espresso.onView;
 import static androidx.test.espresso.action.ViewActions.click;
-import static androidx.test.espresso.action.ViewActions.closeSoftKeyboard;
 import static androidx.test.espresso.action.ViewActions.replaceText;
 import static androidx.test.espresso.assertion.ViewAssertions.matches;
 import static androidx.test.espresso.matcher.ViewMatchers.isDisplayed;
 import static androidx.test.espresso.matcher.ViewMatchers.withId;
+import static androidx.test.espresso.matcher.ViewMatchers.withParent;
 import static androidx.test.espresso.matcher.ViewMatchers.withText;
 import static org.hamcrest.Matchers.allOf;
 
@@ -26,95 +26,90 @@ import org.junit.Rule;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 
-/**
- * Espresso test for checking password complexity.
- */
 @LargeTest
 @RunWith(AndroidJUnit4.class)
+
 public class MainActivityTest {
 
     @Rule
     public ActivityScenarioRule<MainActivity> mActivityScenarioRule =
             new ActivityScenarioRule<>(MainActivity.class);
 
-    /**
-     * Test for a password that doesn't contain an upper case letter.
-     */
     @Test
-    public void testFindMissingUpperCase() {
+    public void testFindlowerCase(){
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("password123#"), closeSoftKeyboard());
+        appCompatEditText.perform(replaceText("PASSWORD123#$*"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
+
         materialButton.perform(click());
 
         ViewInteraction textView = onView(withId(R.id.textView));
-        textView.check(matches(withText("Your password does not have an upper case letter")));
+
+        textView.check(matches(withText("You shall not pass!")));
     }
 
-    /**
-     * Test for a password that doesn't contain a lower case letter.
-     */
     @Test
-    public void testFindMissingLowerCase() {
+    public void testFindUpperCase(){
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("PASSWORD123#"), closeSoftKeyboard());
+        appCompatEditText.perform(replaceText("password123#$*"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
+
         materialButton.perform(click());
 
         ViewInteraction textView = onView(withId(R.id.textView));
-        textView.check(matches(withText("Your password does not have a lower case letter")));
+        textView.check(matches(withText("You shall not pass!")));
     }
 
-    /**
-     * Test for a password that doesn't contain a digit.
-     */
     @Test
-    public void testFindMissingDigit() {
+    public void testFindDigit(){
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("Password#Special"), closeSoftKeyboard());
+        appCompatEditText.perform(replaceText("Password#$*"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
+
         materialButton.perform(click());
 
         ViewInteraction textView = onView(withId(R.id.textView));
-        textView.check(matches(withText("Your password does not have a number")));
+
+        textView.check(matches(withText("You shall not pass!")));
     }
 
-    /**
-     * Test for a password that doesn't contain a special character.
-     */
     @Test
-    public void testFindMissingSpecialCharacter() {
+    public void testFindSpecialCharacter(){
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("Password1234"), closeSoftKeyboard());
+        appCompatEditText.perform(replaceText("Password123"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
+
         materialButton.perform(click());
 
         ViewInteraction textView = onView(withId(R.id.textView));
-        textView.check(matches(withText("Your password does not have a special symbol (@#$%^&*!)")));
+
+        textView.check(matches(withText("You shall not pass!")));
     }
 
     /**
-     * Test for a password that meets all complexity requirements.
+     * Test if the password is okay
      */
     @Test
-    public void testComplexPassword() {
+    public void testPasswordOkay(){
         ViewInteraction appCompatEditText = onView(withId(R.id.editText));
-        appCompatEditText.perform(replaceText("ComplexP@ss1"), closeSoftKeyboard());
+        appCompatEditText.perform(replaceText("Password123#"));
 
         ViewInteraction materialButton = onView(withId(R.id.button));
+
         materialButton.perform(click());
 
         ViewInteraction textView = onView(withId(R.id.textView));
-        textView.check(matches(withText("Your password is complex enough")));
+
+        textView.check(matches(withText("Your password meets the requirements")));
     }
 
-    // Helper method for matching a child view at a specific position in a parent view.
     private static Matcher<View> childAtPosition(
             final Matcher<View> parentMatcher, final int position) {
+
         return new TypeSafeMatcher<View>() {
             @Override
             public void describeTo(Description description) {

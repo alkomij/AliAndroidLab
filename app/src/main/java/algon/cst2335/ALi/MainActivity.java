@@ -1,104 +1,96 @@
 package algon.cst2335.ALi;
 
-import androidx.appcompat.app.AppCompatActivity;
 
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
-
-/**
- * This is the main activity for the password complexity checker app.
- *
- * @author Ali Komijani
- * @version 1.0
- */
 public class MainActivity extends AppCompatActivity {
 
-    /** This holds the text at the center of the screen */
+    /**This holds the text at the center of the screen*/
     private TextView tv = null;
-
-    /** This holds the text at the center of the screen */
+    /**This holds the password at the below position of the TextView*/
     private EditText et = null;
-
-    /** This holds the text at the center of the screen */
-    private Button btn = null;
-
+    /**This hold the Login button in the down of the page*/
+    private Button bt = null;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        tv = findViewById(R.id.textView);
-        et = findViewById(R.id.editText);
-        btn = findViewById(R.id.button);
 
-        btn.setOnClickListener(clk -> {
+        TextView tv = findViewById(R.id.textView);
+        EditText et = findViewById(R.id.editText);
+        Button bt = findViewById(R.id.button);
+
+        bt.setOnClickListener(clk -> {
             String password = et.getText().toString();
+            boolean isPasswordComplex = checkPasswordComplexity(password);
 
-            checkPasswordComplexity(password);
+            if (isPasswordComplex){
+                tv.setText("Your password meets the requirements");
+            }else {
+                tv.setText("You shall not pass!");
+            }
         });
     }
 
-    /**
-     * Checks the complexity of a password and displays a Toast message indicating which criteria are missing.
-     *
-     * @param password The password to be checked for complexity.
-     * @return true if the password meets the complexity criteria, false otherwise.
-     */
-    private boolean checkPasswordComplexity(String password) {
-        boolean foundUpperCase, foundLowerCase, foundNumber, foundSpecial;
-        foundUpperCase = foundLowerCase = foundNumber = foundSpecial = false;
+    Boolean checkPasswordComplexity(String password) {
+        boolean hasUpperCase = false;
+        boolean hasLowerCase = false;
+        boolean hasDigit = false;
+        boolean hasSpecialSymbol = false;
 
         for (char c : password.toCharArray()) {
             if (Character.isUpperCase(c)) {
-                foundUpperCase = true;
+                hasUpperCase = true;
             } else if (Character.isLowerCase(c)) {
-                foundLowerCase = true;
+                hasLowerCase = true;
             } else if (Character.isDigit(c)) {
-                foundNumber = true;
-            } else if (isSpecialCharacter(c)) {
-                foundSpecial = true;
+                hasDigit = true;
+            } else if ("#$%^&*!@?".contains(String.valueOf(c))) {
+                hasSpecialSymbol = true;
             }
         }
 
-        if (!foundUpperCase) {
-            Toast.makeText(this, "Your password does not have an upper case letter", Toast.LENGTH_LONG).show();
+        if (!hasUpperCase) {
+            showToast("Your password does not have an upper case letter");
             return false;
-        } else if (!foundLowerCase) {
-            Toast.makeText(this, "Your password does not have a lower case letter", Toast.LENGTH_LONG).show();
+        } else if (!hasLowerCase) {
+            showToast("Your password does not have a lower case letter");
             return false;
-        } else if (!foundNumber) {
-            Toast.makeText(this, "Your password does not have a number", Toast.LENGTH_LONG).show();
+        } else if (!hasDigit) {
+            showToast("Your password does not have a number");
             return false;
-        } else if (!foundSpecial) {
-            Toast.makeText(this, "Your password does not have a special symbol (@#$%^&*!)", Toast.LENGTH_LONG).show();
+        } else if (!hasSpecialSymbol) {
+            showToast("Your password does not have a special symbol (#$%^&*!@?)");
             return false;
         }
 
-        return true;
+
+        return true; //only get here if they're all true
+
     }
 
-    /**
-     * Checks if a character is a special character (#$%^&*!@?).
-     *
-     * @param c The character to be checked.
-     * @return true if the character is a special character, false otherwise.
-     */
-    private boolean isSpecialCharacter(char c) {
-        switch (c) {
+    private boolean isSpecialCharacter(char c){
+        switch (c){
             case '#':
+            case '*':
+            case '?':
+            case '!':
+            case '@':
             case '$':
             case '%':
             case '^':
             case '&':
-            case '*':
-            case '!':
-            case '@':
-            case '?':
                 return true;
             default:
                 return false;
         }
+    }
+
+    private void showToast(String message) {
+        Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
     }
 }

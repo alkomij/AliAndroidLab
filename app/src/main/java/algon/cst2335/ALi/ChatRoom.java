@@ -24,7 +24,7 @@ import java.util.concurrent.Executors;
 import algon.cst2335.ALi.ChatRoomViewModel;
 import algon.cst2335.ALi.databinding.ActivityChatRoomBinding;
 import algon.cst2335.ALi.databinding.RecieveMessageBinding;
-import algon.cst2335.ALi.SentMessageBinding;
+import algon.cst2335.ALi.databinding.SentMessageBinding;
 
 public class ChatRoom extends AppCompatActivity {
 
